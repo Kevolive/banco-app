@@ -1,4 +1,4 @@
-package com.cesde.banco.repositories;
+package com.cesde.banco_app.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

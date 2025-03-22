@@ -1,4 +1,4 @@
-package com.cesde.banco.models;
+package com.cesde.banco_app.models;
 
 import jakarta.persistence.*;
 import lombok.*;
