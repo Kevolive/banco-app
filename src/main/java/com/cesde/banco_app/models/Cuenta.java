@@ -14,10 +14,10 @@ public class Cuenta {
 
 private Long id;
 private String numeroCuenta;
-private Double Saldo;
+private Double saldo;
 
 @ManyToOne
-@JoinColumn(name = "cliente_id")
+@JoinColumn(name = "cliente_id", nullable = false)
 private Cliente cliente;
     
 }

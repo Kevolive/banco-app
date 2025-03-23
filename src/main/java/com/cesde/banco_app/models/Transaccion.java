@@ -12,12 +12,14 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Entity
 @Table(name = "transacciones")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString(exclude = "cuenta")
 
 public class Transaccion {
 
@@ -29,7 +31,7 @@ public class Transaccion {
     private LocalDateTime fecha;
 
     @ManyToOne
-    @JoinColumn(name = "cuenta_id")
+    @JoinColumn(name = "cuenta_id", nullable = false)
     private Cuenta cuenta;
 
 }
